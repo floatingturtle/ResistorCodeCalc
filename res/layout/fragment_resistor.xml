@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="edu.cuny.citytech.daedalus.labyrinth.ResistorActivity$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:text="Enter resistance."
+        android:textSize="35dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <edu.cuny.citytech.daedalus.widgets.ResistorView
+        android:id="@+id/resistorView1"
+        android:layout_width="256dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+
+    <edu.cuny.citytech.daedalus.widgets.HeadsUpDisplay
+        android:id="@+id/headsUpDisplay1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>
